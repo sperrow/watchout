@@ -7,3 +7,65 @@ svg {
 	border: 5px solid black;
 }
 
+/*image {
+	-webkit-animation-name: spin;
+  -webkit-animation-duration: 40000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}*/
+
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+
+.enemy {
+    position:fixed;
+    top:2%;
+    left:0%;
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
