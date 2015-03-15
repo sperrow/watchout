@@ -49,13 +49,14 @@ var render = function(enemyData){
 				 .append('image')
 				 .attr('width', '20px')
 				 .attr('height', '20px')
-				 // .attr('class', 'enemy')
+				 .attr('class', 'enemy')
 				 .attr("xlink:href", "http://www.serebii.net/blackwhite/accessories/shuriken.png")
 				 .attr('x', function(d) {return axes.x(d.x);})
-				 .attr('y', function(d) {return axes.y(d.y);})
-				 // .transition().duration(1500)
-				 // 						  .attr('x', function(d) {return axes.x(Math.random() * 100);})
-					// 					  .attr('y', function(d) {return axes.y(Math.random() * 100);});
+				 .attr('y', function(d) {return axes.y(d.y);});
+
+	enemies.transition().duration(1500)
+				 						  .attr('x', function(d) {return axes.x(Math.random() * 100);})
+										  .attr('y', function(d) {return axes.y(Math.random() * 100);});
 				 // .attr('transform', 'rotate(180 ' + function(d) {return axes.x(d.x);} + ',' + function(d) {return axes.y(d.y);} + ')');				 
 
 
